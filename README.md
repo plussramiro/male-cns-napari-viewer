@@ -7,6 +7,21 @@ complete EM volume.
 
 Developed during the BrainGlobe track at OSSS 2026.
 
+## Demo
+
+The animation shows interactive exploration of the Male CNS neuropils and a
+frame-by-frame traversal through the spatial EM sections. The frames represent
+consecutive anatomical sections, not time points.
+
+![Male CNS interactive napari viewer demo](docs/media/male_cns_demo.gif)
+
+## Workflow
+
+The viewer brings three aligned data streams into the same napari coordinate
+space: neuropil labels, selected neuronal morphologies, and multiscale EM.
+
+![Interactive Male CNS multimodal visualisation workflow](docs/media/male_cns_workflow.png)
+
 ## Same scientific layers
 
 - Brain and VNC neuropil `Labels` at configurable ROI MIP 2 or 3.
