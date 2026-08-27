@@ -1,0 +1,7 @@
+cloud-volume>=12.14
+dask[array]>=2025.1
+tensorstore>=0.1.85
+napari[all]>=0.6
+numpy>=2.0
+requests>=2.22
+tifffile>=2026.3

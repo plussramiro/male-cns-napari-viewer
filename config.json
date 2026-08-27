@@ -1,0 +1,43 @@
+{
+  "dataset": {
+    "regions": ["brain", "vnc"],
+    "mip": 3
+  },
+  "neurons": {
+    "body_ids": [10056, 10045],
+    "names": {},
+    "show_skeletons": true,
+    "show_somas": true,
+    "soma_size_um": 3.0
+  },
+  "em": {
+    "enabled": true,
+    "source": "https://storage.googleapis.com/flyem_cns_z0720_07m_dvidcoords_n5",
+    "detail_2d_mips": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "overview_3d_mip": 8,
+    "fast_2d_enabled": true,
+    "fast_2d_source": "https://storage.googleapis.com/flyem-male-cns/em/em-clahe-jpeg",
+    "fast_2d_mips": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "cache_gb": 2.0,
+    "visible_on_start": true,
+    "contrast_limits": [0, 255]
+  },
+  "output": {
+    "directory": "outputs",
+    "reuse_existing": true,
+    "shared_cache_directories": ["../project_4/outputs"]
+  },
+  "performance": {
+    "n5_open_workers": 6,
+    "dask_workers": 4,
+    "show_timings": true
+  },
+  "napari": {
+    "launch": true,
+    "ndisplay": 3,
+    "playback_step_slices": 128,
+    "neuropil_opacity": 0.35,
+    "em_opacity": 0.65,
+    "show_features_table": true
+  }
+}

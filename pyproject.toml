@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "male-cns-viewer"
+version = "0.6.0"
+description = "Performance-oriented Male CNS multimodal viewer"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "cloud-volume>=12.14",
+    "dask[array]>=2025.1",
+    "tensorstore>=0.1.85",
+    "napari[all]>=0.6",
+    "numpy>=2.0",
+    "requests>=2.22",
+    "tifffile>=2026.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

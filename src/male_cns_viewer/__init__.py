@@ -1,0 +1,1 @@
+"""Male CNS napari viewer."""
