@@ -15,6 +15,15 @@ consecutive anatomical sections, not time points.
 
 ![Male CNS interactive napari viewer demo](docs/media/male_cns_demo.gif)
 
+### Frame sampling used in the demo
+
+The video uses `napari.playback_step_slices: 128`. Because the native EM
+sections are 8 nm apart, each displayed frame advances 1.024 µm through the
+specimen. This changes only the navigation step; it does not resample or alter
+the underlying EM data.
+
+![Frame sampling and distance advanced per displayed frame](docs/media/frame_sampling.png)
+
 ## Workflow
 
 The viewer brings three aligned data streams into the same napari coordinate
