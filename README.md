@@ -7,6 +7,16 @@ complete EM volume.
 
 Developed during the BrainGlobe track at OSSS 2026.
 
+## Male CNS connectome
+
+![Overview and features of the Janelia FlyEM Male CNS v1.0 connectome](docs/media/drosophila_connectome_features.png)
+
+**Full 8-nm EM array in memory ≈ 1,000 TB**
+
+This estimate refers to loading the complete native-resolution `uint8` array.
+The viewer avoids this requirement by reading only the remote chunks needed
+for the current view.
+
 ## Demo
 
 The animation shows interactive exploration of the Male CNS neuropils and a
